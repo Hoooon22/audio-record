@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 108dp 적응형 아이콘: 가운데 음표 + 녹음 점 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,34 L60,62.5 C58.4,61.6 56.5,61 54.5,61 C48.7,61 44,65 44,70 C44,75 48.7,79 54.5,79 C60.3,79 65,75 65,70 L65,44 L74,44 L74,34 Z" />
+    <path
+        android:fillColor="#E5484D"
+        android:pathData="M38,40 m-6,0 a6,6 0,1 1,12 0 a6,6 0,1 1,-12 0" />
+</vector>
