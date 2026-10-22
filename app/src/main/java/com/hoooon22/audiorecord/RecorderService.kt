@@ -69,7 +69,7 @@ class RecorderService : Service() {
             intent.getParcelableExtra(EXTRA_RESULT_DATA, Intent::class.java)
         } else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra(EXTRA_RESULT_DATA)
+            intent.getParcelableExtra<Intent>(EXTRA_RESULT_DATA)
         }
         if (resultCode != Activity.RESULT_OK || data == null) {
             fail(getString(R.string.projection_denied))

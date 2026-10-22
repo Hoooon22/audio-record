@@ -329,7 +329,7 @@ class MainActivity : Activity() {
 
     private inner class RecordingAdapter : BaseAdapter() {
         override fun getCount() = recordings.size
-        override fun getItem(position: Int) = recordings[position]
+        override fun getItem(position: Int): Any = recordings[position]
         override fun getItemId(position: Int) = position.toLong()
 
         override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
