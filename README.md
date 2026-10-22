@@ -15,9 +15,9 @@
 
 ## 설치
 
-1. 이 저장소의 **Actions → Build APK** 최신 실행에서 `MediaVolumeRecorder-apk` 를 내려받아 압축을 풉니다.
-   (`v1.0` 같은 태그를 푸시하면 **Releases** 에도 APK 가 올라갑니다.)
-2. 폰으로 `MediaVolumeRecorder.apk` 를 옮겨 실행하고, "출처를 알 수 없는 앱 설치"를 허용합니다.
+1. 갤럭시 폰 브라우저에서 이 저장소의 **Releases → 최신 릴리스** 를 열고 `MediaVolumeRecorder.apk` 를 내려받습니다.
+   (바로가기: `https://github.com/Hoooon22/audio-record/releases/latest/download/MediaVolumeRecorder.apk`)
+2. 내려받은 APK 를 열고 "출처를 알 수 없는 앱 설치"를 허용한 뒤 설치합니다.
 
 직접 빌드하려면 Android SDK 가 설치된 환경에서:
 

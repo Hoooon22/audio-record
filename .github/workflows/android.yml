@@ -36,8 +36,14 @@ jobs:
           name: MediaVolumeRecorder-apk
           path: MediaVolumeRecorder.apk
 
-      - name: Publish release (tags only)
-        if: startsWith(github.ref, 'refs/tags/v')
+      # 푸시할 때마다 릴리스에 APK 를 올립니다.
+      # 폰에서 https://github.com/<owner>/<repo>/releases/latest 로 바로 내려받을 수 있습니다.
+      - name: Publish release
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || format('build-{0}', github.run_number) }}
+          name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || format('미디어 녹음기 build {0}', github.run_number) }}
+          target_commitish: ${{ github.sha }}
+          make_latest: "true"
           files: MediaVolumeRecorder.apk
